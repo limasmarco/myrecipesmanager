@@ -7,20 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Salsabrosas</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a class="active" href="#">Mexicanas</a></li>
-      <li><a href="#">Pa' Takear</a></li>
-      <li><a href="#">Pa' botanear</a></li>
-    </ul>
-  </div>
-</nav>
+<%= render 'layouts/navbar' %>
 <div class="container">
 <%= yield %>
+
+<%= render 'layouts/footer' %>
 </div>
 </body>
 </html>
